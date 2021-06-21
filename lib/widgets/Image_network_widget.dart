@@ -4,8 +4,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:pinch_zoom/pinch_zoom.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainImageNetworkWidget extends StatelessWidget {
-  const MainImageNetworkWidget({
+class ImageNetworkWidget extends StatelessWidget {
+  const ImageNetworkWidget({
     @required this.imageUrl,
     @required this.height,
     @required this.width,

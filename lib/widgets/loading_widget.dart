@@ -4,8 +4,8 @@ import 'package:loading/indicator.dart';
 import 'package:loading/loading.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainLoadingWidget extends StatelessWidget {
-  const MainLoadingWidget({
+class LoadingWidget extends StatelessWidget {
+  const LoadingWidget({
     @required this.indicator,
     Key key,
     this.isFullScreen = true,

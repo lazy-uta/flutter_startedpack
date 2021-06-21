@@ -10,8 +10,8 @@ import 'package:startedpack/models/main_menus_model.dart';
 import 'alert_dialog_widget.dart';
 import 'custom_text_widget.dart';
 
-class MainGridMenuWidget extends StatelessWidget {
-  const MainGridMenuWidget({
+class GridMenuWidget extends StatelessWidget {
+  const GridMenuWidget({
     @required List<MainMenusModel> listMenu,
     Key key,
   })  : _listMenu = listMenu,
@@ -32,7 +32,7 @@ class MainGridMenuWidget extends StatelessWidget {
             (data) => InkWell(
               onTap: !data.isActive
                   ? () {
-                      MainAlertDialogWidget.createAlertDialog(
+                      AlertDialogWidget.createAlertDialog(
                         context,
                         TextData.textSorry,
                         TextData.textMenuNotAvailableYet,
@@ -54,7 +54,7 @@ class MainGridMenuWidget extends StatelessWidget {
                   const SizedBox(
                     height: 10.0,
                   ),
-                  MainCustomTextWidget(
+                  CustomTextWidget(
                     text: data.name,
                     color: ColorData.black,
                     fontSize: SizeData.fontSize12,

@@ -3,8 +3,8 @@ import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/size_data.dart';
 import 'package:startedpack/widgets/custom_text_widget.dart';
 
-class MainActionButtonOutlineWidget extends StatelessWidget {
-  const MainActionButtonOutlineWidget({
+class ActionButtonOutlineWidget extends StatelessWidget {
+  const ActionButtonOutlineWidget({
     @required this.onPressed,
     @required this.text,
     this.textColor = ColorData.green18,
@@ -45,7 +45,7 @@ class MainActionButtonOutlineWidget extends StatelessWidget {
         child: Align(
           alignment: alignment,
           child: isText
-              ? MainCustomTextWidget(
+              ? CustomTextWidget(
                   text: text,
                   color: textColor,
                   fontSize: SizeData.fontSize16,
@@ -62,7 +62,7 @@ class MainActionButtonOutlineWidget extends StatelessWidget {
                     const SizedBox(
                       width: 8.0,
                     ),
-                    MainCustomTextWidget(
+                    CustomTextWidget(
                       text: text,
                       color: textColor,
                       fontSize: SizeData.fontSize16,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MainScrollBodyWidget extends StatelessWidget {
-  const MainScrollBodyWidget({
+class ScrollBodyWidget extends StatelessWidget {
+  const ScrollBodyWidget({
     @required this.body,
     Key key,
     this.isSafeTop = true,

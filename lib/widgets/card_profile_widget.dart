@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:startedpack/commons/constant_data.dart';
 
-class MainCardProfileWidget extends StatelessWidget {
-  const MainCardProfileWidget({
+class CardProfileWidget extends StatelessWidget {
+  const CardProfileWidget({
     @required this.nama,
     Key key,
   }) : super(key: key);

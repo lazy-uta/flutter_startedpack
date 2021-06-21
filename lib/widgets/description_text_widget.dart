@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MainDescriptionTextWidget extends StatelessWidget {
-  const MainDescriptionTextWidget({
+class DescriptionTextWidget extends StatelessWidget {
+  const DescriptionTextWidget({
     @required this.textDescription,
     @required this.maxLines,
     @required this.textAlign,

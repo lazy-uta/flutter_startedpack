@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainBackButtonWidget extends StatelessWidget {
-  const MainBackButtonWidget({
+class BackButtonWidget extends StatelessWidget {
+  const BackButtonWidget({
     @required this.backTo,
     this.color = ColorData.white,
     Key key,

@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainAlertDialogWidget {
+class AlertDialogWidget {
   static void createAlertDialog(
     BuildContext _context,
     String _textTitle,

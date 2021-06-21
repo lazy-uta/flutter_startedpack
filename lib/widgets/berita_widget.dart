@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/size_data.dart';
-import 'package:startedpack/helpers/main_date_format_helper.dart';
+import 'package:startedpack/helpers/date_format_helper.dart';
 import 'package:startedpack/widgets/Image_network_widget.dart';
 import 'package:startedpack/widgets/custom_text_widget.dart';
 
-class MainBeritaWidget extends StatelessWidget {
-  MainBeritaWidget({
+class BeritaWidget extends StatelessWidget {
+  BeritaWidget({
     @required this.title,
     @required this.subTitle,
     @required this.image,
@@ -25,7 +25,7 @@ class MainBeritaWidget extends StatelessWidget {
     this.padding = const EdgeInsets.all(10),
   }) : super(key: key);
 
-  final MainDateFormatHelper _mainDateFormatHelper = MainDateFormatHelper();
+  final DateFormatHelper _mainDateFormatHelper = DateFormatHelper();
   final String title, subTitle, image, tanggal;
   final EdgeInsets margin, padding;
   final BorderRadius borderRadius;
@@ -59,7 +59,7 @@ class MainBeritaWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  MainCustomTextWidget(
+                  CustomTextWidget(
                     text: title,
                     color: ColorData.black,
                     fontSize: SizeData.fontSize16,
@@ -68,7 +68,7 @@ class MainBeritaWidget extends StatelessWidget {
                   const SizedBox(
                     height: 5,
                   ),
-                  MainCustomTextWidget(
+                  CustomTextWidget(
                     text: _mainDateFormatHelper.formatDate(
                         'dd LLLL yyyy', tanggal),
                     color: ColorData.greyA0,
@@ -78,7 +78,7 @@ class MainBeritaWidget extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  MainCustomTextWidget(
+                  CustomTextWidget(
                     maxLines: 3,
                     text: subTitle,
                     color: ColorData.grey75,
@@ -90,7 +90,7 @@ class MainBeritaWidget extends StatelessWidget {
             const SizedBox(
               width: 15,
             ),
-            MainImageNetworkWidget(
+            ImageNetworkWidget(
               imageUrl: image,
               height: imageHeight,
               width: imageWidth,

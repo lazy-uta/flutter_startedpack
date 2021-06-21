@@ -3,8 +3,8 @@ import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/size_data.dart';
 import 'package:startedpack/widgets/action_button_fill_widget.dart';
 
-class MainBottomButtonWidget extends StatelessWidget {
-  const MainBottomButtonWidget({
+class BottomButtonWidget extends StatelessWidget {
+  const BottomButtonWidget({
     @required this.context,
     @required this.onPress,
     @required this.buttonText,
@@ -38,7 +38,7 @@ class MainBottomButtonWidget extends StatelessWidget {
           ),
         ],
       ),
-      child: MainActionButtonFillWidget(
+      child: ActionButtonFillWidget(
         height: SizeData.buttonHeight48,
         width: double.infinity,
         onPressed: onPress,

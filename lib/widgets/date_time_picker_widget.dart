@@ -4,8 +4,8 @@ import 'package:date_time_picker/date_time_picker.dart';
 
 import 'package:startedpack/commons/text_data.dart';
 
-class MainDateTimePickerWidget extends StatelessWidget {
-  const MainDateTimePickerWidget({
+class DateTimePickerWidget extends StatelessWidget {
+  const DateTimePickerWidget({
     @required this.dateLabelText,
     @required this.focusNode,
     @required this.onChanged,

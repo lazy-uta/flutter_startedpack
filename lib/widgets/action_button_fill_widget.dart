@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MainActionButtonFillWidget extends StatelessWidget {
-  const MainActionButtonFillWidget(
+class ActionButtonFillWidget extends StatelessWidget {
+  const ActionButtonFillWidget(
       {@required this.onPressed,
       @required this.text,
       Key key,

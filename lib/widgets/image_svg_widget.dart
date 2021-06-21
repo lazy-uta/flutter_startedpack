@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainImageSvgWidget extends StatelessWidget {
-  const MainImageSvgWidget({
+class ImageSvgWidget extends StatelessWidget {
+  const ImageSvgWidget({
     @required this.imagePath,
     @required this.height,
     @required this.width,

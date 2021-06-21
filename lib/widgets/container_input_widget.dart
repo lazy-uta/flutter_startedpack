@@ -5,8 +5,8 @@ import 'package:pattern_formatter/pattern_formatter.dart';
 import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/text_data.dart';
 
-class MainContainerInputWidget extends StatelessWidget {
-  const MainContainerInputWidget({
+class ContainerInputWidget extends StatelessWidget {
+  const ContainerInputWidget({
     @required this.validator,
     @required this.focusNode,
     @required this.nextFocusNode,

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MainEmptyWidget extends StatelessWidget {
-  const MainEmptyWidget({
+class EmptyWidget extends StatelessWidget {
+  const EmptyWidget({
     @required String pesan,
     Key key,
   })  : _pesan = pesan,

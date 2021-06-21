@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:startedpack/commons/color_data.dart';
 
-class MainCardInputWidget extends StatelessWidget {
-  const MainCardInputWidget({
+class CardInputWidget extends StatelessWidget {
+  const CardInputWidget({
     @required this.onChange,
     @required this.onSaved,
     @required this.validator,
