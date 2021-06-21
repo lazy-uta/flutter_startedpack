@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:startedpack/widgets/alert_dialog_widget.dart';
 
-class MainCekPermissionHelper {
-  factory MainCekPermissionHelper() {
+class CekPermissionHelper {
+  factory CekPermissionHelper() {
     return _mainCekPermissionHelper;
   }
 
-  MainCekPermissionHelper._internal();
+  CekPermissionHelper._internal();
 
-  static final MainCekPermissionHelper _mainCekPermissionHelper =
-      MainCekPermissionHelper._internal();
+  static final CekPermissionHelper _mainCekPermissionHelper =
+      CekPermissionHelper._internal();
 
   Future askPermissionCamera(BuildContext context) async {
     final status = await Permission.camera.request();

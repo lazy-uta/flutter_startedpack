@@ -2,15 +2,14 @@ import 'dart:convert';
 
 import 'package:startedpack/models/main_jwt_parse_model.dart';
 
-class MainJwtParseHelper {
-  factory MainJwtParseHelper() {
+class JwtParseHelper {
+  factory JwtParseHelper() {
     return _mainJwtParseHelper;
   }
 
-  MainJwtParseHelper._internal();
+  JwtParseHelper._internal();
 
-  static final MainJwtParseHelper _mainJwtParseHelper =
-      MainJwtParseHelper._internal();
+  static final JwtParseHelper _mainJwtParseHelper = JwtParseHelper._internal();
 
   MainJwtParseModel parseJwt(String token) {
     final parts = token.split('.');

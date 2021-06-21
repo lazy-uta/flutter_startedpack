@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:get/route_manager.dart';
 
-class MainRouteHelper {
-  factory MainRouteHelper() {
+class RouteHelper {
+  factory RouteHelper() {
     return _mainRouteHelper;
   }
 
-  MainRouteHelper._internal();
+  RouteHelper._internal();
 
-  static final MainRouteHelper _mainRouteHelper = MainRouteHelper._internal();
+  static final RouteHelper _mainRouteHelper = RouteHelper._internal();
 
   List<GetPage> getRoute() => <GetPage>[
         /// main routes

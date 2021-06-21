@@ -1,14 +1,14 @@
 import 'package:connectivity/connectivity.dart';
 
-class MainCheckConnectivityHelper {
-  factory MainCheckConnectivityHelper() {
+class CheckConnectivityHelper {
+  factory CheckConnectivityHelper() {
     return _mainCheckConnectivityHelper;
   }
 
-  MainCheckConnectivityHelper._internal();
+  CheckConnectivityHelper._internal();
 
-  static final MainCheckConnectivityHelper _mainCheckConnectivityHelper =
-      MainCheckConnectivityHelper._internal();
+  static final CheckConnectivityHelper _mainCheckConnectivityHelper =
+      CheckConnectivityHelper._internal();
 
   Future<bool> checkConnectivity() async {
     final _connectivityResult = await Connectivity().checkConnectivity();

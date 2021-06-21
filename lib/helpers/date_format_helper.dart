@@ -1,14 +1,14 @@
 import 'package:intl/intl.dart';
 
-class MainDateFormatHelper {
-  factory MainDateFormatHelper() {
+class DateFormatHelper {
+  factory DateFormatHelper() {
     return _mainDateFormatHelper;
   }
 
-  MainDateFormatHelper._internal();
+  DateFormatHelper._internal();
 
-  static final MainDateFormatHelper _mainDateFormatHelper =
-      MainDateFormatHelper._internal();
+  static final DateFormatHelper _mainDateFormatHelper =
+      DateFormatHelper._internal();
 
   String formatDate(String displayFormat, String dateTime,
       {String serverFormat = 'yyyy-MM-dd HH:mm:ss'}) {

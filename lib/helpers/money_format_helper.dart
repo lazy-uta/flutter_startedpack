@@ -1,14 +1,14 @@
 import 'package:intl/intl.dart';
 
-class MainMoneyFormatHelper {
-  factory MainMoneyFormatHelper() {
+class MoneyFormatHelper {
+  factory MoneyFormatHelper() {
     return _mainMoneyFormatHelper;
   }
 
-  MainMoneyFormatHelper._internal();
+  MoneyFormatHelper._internal();
 
-  static final MainMoneyFormatHelper _mainMoneyFormatHelper =
-      MainMoneyFormatHelper._internal();
+  static final MoneyFormatHelper _mainMoneyFormatHelper =
+      MoneyFormatHelper._internal();
 
   String formatMoney(String money, {bool isUseDecimal = true}) {
     final NumberFormat _idrFormat = NumberFormat.currency(

@@ -4,14 +4,14 @@ import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import 'package:startedpack/controllers/hive_controller.dart';
 
-class MainDioHelper {
-  factory MainDioHelper() {
+class DioHelper {
+  factory DioHelper() {
     return _mainDioHelper;
   }
 
-  MainDioHelper._internal();
+  DioHelper._internal();
 
-  static final MainDioHelper _mainDioHelper = MainDioHelper._internal();
+  static final DioHelper _mainDioHelper = DioHelper._internal();
 
   final HiveController _mainHiveController = Get.find<HiveController>();
 

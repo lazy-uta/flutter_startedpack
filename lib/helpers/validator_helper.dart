@@ -1,14 +1,14 @@
 import 'package:startedpack/commons/text_data.dart';
 
-class MainValidatorHelper {
-  factory MainValidatorHelper() {
+class ValidatorHelper {
+  factory ValidatorHelper() {
     return _mainValidatorHelper;
   }
 
-  MainValidatorHelper._internal();
+  ValidatorHelper._internal();
 
-  static final MainValidatorHelper _mainValidatorHelper =
-      MainValidatorHelper._internal();
+  static final ValidatorHelper _mainValidatorHelper =
+      ValidatorHelper._internal();
 
   String validateBasic(String value) {
     if (value.isEmpty) {

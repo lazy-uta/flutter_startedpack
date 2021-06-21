@@ -1,14 +1,14 @@
 import 'package:package_info/package_info.dart';
 
-class MainPackageInfoHelper {
-  factory MainPackageInfoHelper() {
+class PackageInfoHelper {
+  factory PackageInfoHelper() {
     return _mainPackageInfoHelper;
   }
 
-  MainPackageInfoHelper._internal();
+  PackageInfoHelper._internal();
 
-  static final MainPackageInfoHelper _mainPackageInfoHelper =
-      MainPackageInfoHelper._internal();
+  static final PackageInfoHelper _mainPackageInfoHelper =
+      PackageInfoHelper._internal();
 
   Future<String> getVersion() async {
     final PackageInfo _packageInfo = await PackageInfo.fromPlatform();

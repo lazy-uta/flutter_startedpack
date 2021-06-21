@@ -4,15 +4,15 @@ import 'package:get/get.dart';
 import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/text_data.dart';
 
-class MainShowPopUpDialogHelper {
-  factory MainShowPopUpDialogHelper() {
+class ShowPopUpDialogHelper {
+  factory ShowPopUpDialogHelper() {
     return _mainShowPopUpDialogHelper;
   }
 
-  MainShowPopUpDialogHelper._internal();
+  ShowPopUpDialogHelper._internal();
 
-  static final MainShowPopUpDialogHelper _mainShowPopUpDialogHelper =
-      MainShowPopUpDialogHelper._internal();
+  static final ShowPopUpDialogHelper _mainShowPopUpDialogHelper =
+      ShowPopUpDialogHelper._internal();
 
   void showPopUpDialog({
     String title,

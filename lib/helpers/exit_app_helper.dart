@@ -6,15 +6,14 @@ import 'package:startedpack/commons/size_data.dart';
 import 'package:startedpack/commons/text_data.dart';
 import 'package:startedpack/controllers/app_controller.dart';
 
-class MainExitAppHelper {
-  factory MainExitAppHelper() {
+class ExitAppHelper {
+  factory ExitAppHelper() {
     return _mainExitAppHelper;
   }
 
-  MainExitAppHelper._internal();
+  ExitAppHelper._internal();
 
-  static final MainExitAppHelper _mainExitAppHelper =
-      MainExitAppHelper._internal();
+  static final ExitAppHelper _mainExitAppHelper = ExitAppHelper._internal();
 
   bool exitApp(AppController mainAppController) {
     if (mainAppController.backButtonPressedCount != 1) {

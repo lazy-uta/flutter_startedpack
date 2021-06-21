@@ -9,15 +9,15 @@ import 'package:startedpack/commons/color_data.dart';
 import 'package:startedpack/commons/size_data.dart';
 import 'package:startedpack/commons/text_data.dart';
 
-class MainSaveAndShareImageHelper {
-  factory MainSaveAndShareImageHelper() {
+class SaveAndShareImageHelper {
+  factory SaveAndShareImageHelper() {
     return _mainSaveAndShareImageHelper;
   }
 
-  MainSaveAndShareImageHelper._internal();
+  SaveAndShareImageHelper._internal();
 
-  static final MainSaveAndShareImageHelper _mainSaveAndShareImageHelper =
-      MainSaveAndShareImageHelper._internal();
+  static final SaveAndShareImageHelper _mainSaveAndShareImageHelper =
+      SaveAndShareImageHelper._internal();
 
   Future<void> saveOrShareImage(
       bool isSave, ScreenshotController screenshotController) async {
