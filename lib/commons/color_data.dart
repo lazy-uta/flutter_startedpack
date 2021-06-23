@@ -11,7 +11,6 @@ class ColorData {
   static const Color greyblue = Color.fromRGBO(236, 244, 255, 1);
 
   static const Color redEF = Color(0xFFEF5350);
-  static const Color yellowFF = Color(0xFFFFB816);
   static const Color greyBD = Color(0xFFBDBDBD);
   static const Color greyEE = Color(0xFFEEEEEE);
   static const Color greyA0 = Color(0xFFA0A4A8);
@@ -33,4 +32,28 @@ class ColorData {
   static const Color blue01 = Color(0xFF0166FF);
 
   static const Color bgGreyED = Color(0xFFEDEDED);
+
+  static const Color greenA6 = Color(0xff18A659);
+  static const Color greenBA = Color(0xff2CBA6D);
+  static const Color greenCE = Color(0xff40CE81);
+  static const Color greenE2 = Color(0xff54E295);
+  static const Color greenF6 = Color(0xff68F6A9);
+
+  static const Color yellowB8 = Color(0xffFFB816);
+  static const Color yellowCC = Color(0xffFFCC2A);
+  static const Color yellowE0 = Color(0xffFFE03E);
+  static const Color yellowF4 = Color(0xffFFF452);
+  static const Color yellowFF = Color(0xffFFFF66);
+
+  static const Color blue8E = Color(0xff448EFE);
+  static const Color blueA2 = Color(0xff58A2FF);
+  static const Color blueB6 = Color(0xff6CB6FF);
+  static const Color blueCA = Color(0xff80CAFF);
+  static const Color blueDE = Color(0xff94DEFF);
+
+  static const Color redE6 = Color(0xffFE6644);
+  static const Color redF7 = Color(0xffFF7A58);
+  static const Color redF8 = Color(0xffFF8E6C);
+  static const Color redFA = Color(0xffFFA280);
+  static const Color redFB = Color(0xffFFB694);
 }

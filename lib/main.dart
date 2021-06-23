@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:startedpack/bindings/initial_binding.dart';
 import 'package:startedpack/commons/theme_data.dart';
-import 'package:startedpack/helpers/main_route_helper.dart';
+import 'package:startedpack/helpers/route_helper.dart';
 
 import 'commons/constant_data.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final MainThemeData _mainThemeData = MainThemeData();
-    final MainRouteHelper _routeHelper = MainRouteHelper();
+    final RouteHelper _routeHelper = RouteHelper();
 
     return GetMaterialApp(
       title: ConstantData.projectTitle,
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
       initialRoute: ConstantData.initialRoute,
       transitionDuration: const Duration(milliseconds: 200),
       defaultTransition: Transition.rightToLeftWithFade,
-      initialBinding: MainInitialBinding(),
+      initialBinding: InitialBinding(),
       getPages: _routeHelper.getRoute(),
     );
   }

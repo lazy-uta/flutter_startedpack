@@ -3,12 +3,11 @@ import 'dart:async';
 import 'package:connectivity/connectivity.dart';
 import 'package:get/get.dart';
 import 'package:startedpack/commons/text_data.dart';
-import 'package:startedpack/helpers/main_show_pop_up_dialog_helper.dart';
+import 'package:startedpack/helpers/show_pop_up_dialog_helper.dart';
 
 class AppController extends GetxController {
   final Connectivity _connectivity = Connectivity();
-  final MainShowPopUpDialogHelper _showPopUpDialogHelper =
-      MainShowPopUpDialogHelper();
+  final ShowPopUpDialogHelper _showPopUpDialogHelper = ShowPopUpDialogHelper();
   bool isAppLoading = false;
   int backButtonPressedCount = 0, _counter = 0;
 

@@ -16,7 +16,7 @@ class CekPermissionHelper {
   Future askPermissionCamera(BuildContext context) async {
     final status = await Permission.camera.request();
     if (status.isDenied) {
-      MainAlertDialogWidget.createAlertDialog(context, 'Izin Kamera Ditolak',
+      AlertDialogWidget.createAlertDialog(context, 'Izin Kamera Ditolak',
           'Beberapa fitur akan tidak berfungsi', 'OK');
     }
   }
@@ -24,18 +24,15 @@ class CekPermissionHelper {
   Future askPermissionMedia(BuildContext context) async {
     final status = await Permission.storage.request();
     if (status.isDenied) {
-      MainAlertDialogWidget.createAlertDialog(
-          context,
-          'Izin akses Media Ditolak',
-          'Beberapa akan fitur akan tidak berfungsi',
-          'OK');
+      AlertDialogWidget.createAlertDialog(context, 'Izin akses Media Ditolak',
+          'Beberapa akan fitur akan tidak berfungsi', 'OK');
     }
   }
 
   Future askPermissionLocation(BuildContext context) async {
     final status = await Permission.locationWhenInUse.request();
     if (status.isDenied) {
-      MainAlertDialogWidget.createAlertDialog(context, 'Izin Location Ditolak',
+      AlertDialogWidget.createAlertDialog(context, 'Izin Location Ditolak',
           'Beberapa akan fitur akan tidak berfungsi', 'OK');
     }
   }
